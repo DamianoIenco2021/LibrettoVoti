@@ -2,6 +2,18 @@ package it.polito.tdp.model;
 
 import java.time.LocalDate;
 
+//POJO Plan Old Java Object
+//JAVA BEAN
+
+// semploice classe che contiene dati
+
+/*
+ * Costruttore della classe voto
+ * @param nome Nome del corso
+ * @param voto Voto ottenuto
+ * @param data data di superamento esame
+ */
+
 public class Voto {
 	private String nomeCorso;
 	private int voto;
@@ -37,6 +49,13 @@ public class Voto {
 	public void setData(LocalDate data) {
 		this.data = data;
 	}
+
+	@Override
+	public String toString() {
+		return "Esame " + nomeCorso + "superato con: " + voto + " il " + data ;
+	}
+
+	
 	
 	
 
